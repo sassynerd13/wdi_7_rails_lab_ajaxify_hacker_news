@@ -13,6 +13,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'handlebars_assets'
+gem 'active_model_serializers'
 
 gem 'spring', group: :development
 
@@ -20,18 +22,19 @@ gem 'spring', group: :development
 
 gem 'devise'
 gem 'validate_url'
+gem 'js-routes'
 
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
+  gem 'faker'
 end
 
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'faker'
   gem 'launchy'
   gem 'poltergeist'
   gem 'shoulda-matchers'

@@ -1,0 +1,9 @@
+<div class="comment">
+    <hr>
+    <p>
+    {{formatScore score}} by {{creator}} {{timeAgoInWords created_at}}
+| <a data-method="patch" href="/comments/{{id}}/vote?direction=up" rel="nofollow">Upvote</a>
+| <a data-method="patch" href="/comments/{{id}}/vote?direction=down" rel="nofollow">Downvote</a>
+    </p>
+    {{body}}
+</div>
